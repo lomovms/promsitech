@@ -586,6 +586,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+document.querySelectorAll('.video-wrapper__play').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var wrapper = btn.closest('.video-wrapper');
+    var src = wrapper.dataset.video;
+    var iframe = document.createElement('iframe');
+    iframe.src = src + '?autoplay=1';
+    iframe.frameBorder = '0';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    iframe.width = '100%';
+    iframe.height = '100%';
+    wrapper.innerHTML = ''; // очищаем превью и кнопку
+
+    wrapper.appendChild(iframe);
+  });
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(3)))
 
 /***/ }),
