@@ -143,11 +143,12 @@
           </div>
           <section class="section-catalog" id="catalog">
             <div class="section-title section-title--alt">
-              <h1 class="main-slide__title blue">Каталог	</h1>
-              <div class="product-filters">
+              <h1 class="main-slide__title blue">Каталог</h1>
+              <div class="button filter-toggle hidden-md hidden-lg" type="button"><i class="icon icon--filter"></i>Фильтры</div>
+              <div class="product-filters hidden-sm hidden-xs">
                 <div class="filter"><span class="filter__label">Сортировать по: </span>
                   <select class="filter__select" name="sort">
-                    <option value="date">дата</option>
+                    <option value="date">Категория оборудования</option>
                     <option value="price">цена</option>
                     <option value="popularity">популярность</option>
                   </select>
@@ -160,105 +161,164 @@
                   </select>
                 </div>
               </div>
+              <div class="filter-popup hidden">
+                <div class="filter-popup__inner">
+                  <div class="filter-popup__header">
+                    <h2>Фильтры</h2>
+                    <button class="filter-popup__close" type="button" aria-label="Закрыть"><i class="icon icon--close"></i></button>
+                  </div>
+                  <div class="filter">
+                    <select class="filter__select" name="sort">
+                      <option value="date">Категория</option>
+                      <option value="price">Цена</option>
+                      <option value="popularity">Популярность</option>
+                    </select>
+                  </div>
+                  <div class="filter">
+                    <select class="filter__select" name="brand">
+                      <option value="brand1">Бренд</option>
+                      <option value="brand2">Бренд 2</option>
+                      <option value="brand3">Бренд 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="catalog-title">Приводы</div>
             <div class="catalog-grid catalog-grid--full">
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Преобразователи<br class="hidden-xs--small hidden-xs">частоты</h3>
+                    <h3 class="catalog-item__title">Преобразователи<br class="hidden-xs--small hidden-xs">частоты INNOVERT</h3>
                     <div class="catalog-item__subtitle">INNOVARI и INNORED</div>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
                   <div class="catalog-item__image"> <img src="assets/images/required/frequency-converter2.png" alt="Преобразователи частоты"></div></a></div>
               <div class="catalog-item catalog-item--active"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Редукторы</h3>
+                    <h3 class="catalog-item__title">Редукторы INNOVARI,<br>INNORED</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
                   <div class="catalog-item__image"> <img src="assets/images/required/gearbox.png" alt="Редукторы"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Энкодеры</h3>
-                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
-                  </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/encoder.png" alt="Энкодеры"></div></a></div>
-              <div class="catalog-item"><a class="catalog-item__link" href="#">
-                  <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Электродвигатели</h3>
+                    <h3 class="catalog-item__title">Электродвигатели<br>INNOVARI, INNORED</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
                   <div class="catalog-item__image"> <img src="assets/images/required/electric-motor.png" alt="Электродвигатели"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Мотор-редукторы</h3>
+                    <h3 class="catalog-item__title">Мотор-редукторы<br>INNOVARI, INNORED</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
                   <div class="catalog-item__image"> <img src="assets/images/required/motor-gearbox.png" alt="Мотор-редукторы"></div></a></div>
+            </div>
+            <div class="catalog-title">Датчики</div>
+            <div class="catalog-grid catalog-grid--full">
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Преобразователи<br class="hidden-xs--small hidden-xs">частоты</h3>
+                    <h3 class="catalog-item__title">Датчики уровня<br>сыпучих продуктов INNOLEVEL</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/frequency-converter2.png" alt="Преобразователи частоты"></div></a></div>
-              <div class="catalog-item catalog-item--active"><a class="catalog-item__link" href="#">
-                  <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Редукторы</h3>
-                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
-                  </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/gearbox.png" alt="Редукторы"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/bulk-level.png" alt="Датчики уровня сыпучих продуктов"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Энкодеры</h3>
+                    <h3 class="catalog-item__title">Датчики уровня<br>жидких сред INNOLEVEL</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/encoder.png" alt="Энкодеры"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/liquid-level.png" alt="Датчики уровня жидких сред"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Электродвигатели</h3>
+                    <h3 class="catalog-item__title">Датчики конвейерной<br>безопасности INNOLEVEL</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/electric-motor.png" alt="Электродвигатели"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/conveyor-safety.png" alt="Датчики конвейерной безопасности"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Мотор-редукторы</h3>
+                    <h3 class="catalog-item__title">Датчики пыли INNOLEVEL</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/motor-gearbox.png" alt="Мотор-редукторы"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/dust.png" alt="Датчики пыли"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Преобразователи<br class="hidden-xs--small hidden-xs">частоты</h3>
+                    <h3 class="catalog-item__title">Датчики угла<br>поворота (энкодеры) INNOCONT</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/frequency-converter2.png" alt="Преобразователи частоты"></div></a></div>
-              <div class="catalog-item catalog-item--active"><a class="catalog-item__link" href="#">
-                  <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Редукторы</h3>
-                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
-                  </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/gearbox.png" alt="Редукторы"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/encoder.png" alt="Датчики угла поворота"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Энкодеры</h3>
+                    <h3 class="catalog-item__title">Бесконтактные<br>датчики INNOCONT</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/encoder.png" alt="Энкодеры"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/inductive.png" alt="Бесконтактные датчики"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Электродвигатели</h3>
+                    <h3 class="catalog-item__title">Датчики давления INNOCONT</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/electric-motor.png" alt="Электродвигатели"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/pressure.png" alt="Датчики давления"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Мотор-редукторы</h3>
+                    <h3 class="catalog-item__title">Датчики температуры INNOCONT</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/motor-gearbox.png" alt="Мотор-редукторы"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/temperature.png" alt="Датчики температуры"></div></a></div>
               <div class="catalog-item"><a class="catalog-item__link" href="#">
                   <div class="catalog-item__content">
-                    <h3 class="catalog-item__title">Мотор-редукторы</h3>
+                    <h3 class="catalog-item__title">Датчики уровня Baumer</h3>
                     <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
                   </div>
-                  <div class="catalog-item__image"> <img src="assets/images/required/motor-gearbox.png" alt="Мотор-редукторы"></div></a></div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/level-baumer.png" alt="Датчики уровня Baumer"></div></a></div>
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Датчики концентрации Baumer</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/concentration.png" alt="Датчики концентрации"></div></a></div>
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Датчики потока Baumer</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/flow.png" alt="Датчики потока"></div></a></div>
+            </div>
+            <div class="catalog-title">Автоматика</div>
+            <div class="catalog-grid catalog-grid--full">
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Светосигнальные<br>колонны INNOCONT</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/light-columns.png" alt="Светосигнальные колонны"></div></a></div>
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Термоконтроллеры INNOCONT</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/thermocontroller.png" alt="Термоконтроллеры"></div></a></div>
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Источники питания INNOCONT</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/power-supply.png" alt="Источники питания"></div></a></div>
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Прочая автоматика</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/other-automation.png" alt="Прочая автоматика"></div></a></div>
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Автоматика Baumer</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/automation-baumer.png" alt="Автоматика Baumer"></div></a></div>
+              <div class="catalog-item"><a class="catalog-item__link" href="#">
+                  <div class="catalog-item__content">
+                    <h3 class="catalog-item__title">Автоматика Autonics</h3>
+                    <div class="catalog-item__count"><span class="catalog-item__badge">20</span>Позиций</div>
+                  </div>
+                  <div class="catalog-item__image"> <img src="assets/images/required/catalog/automation-autonics.png" alt="Автоматика Autonics"></div></a></div>
             </div>
           </section>
           <section class="section-contact-form">
@@ -273,6 +333,9 @@
                   <div class="contact-form__group">
                     <input class="contact-form__input" type="tel" name="phone" placeholder="Номер телефона" required>
                   </div>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" required name="agree"><span class="custom-checkbox__box"></span>Я согласен с <a href="/policy" target="_blank">политикой обработки персональных данных</a>
+                  </label>
                   <button class="button button--red" type="submit">Отправить заявку</button>
                 </form>
               </div>

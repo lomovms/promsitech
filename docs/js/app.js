@@ -602,6 +602,20 @@ document.querySelectorAll('.video-wrapper__play').forEach(function (btn) {
     wrapper.appendChild(iframe);
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  var filterToggle = document.querySelector('.filter-toggle');
+  var filterPopup = document.querySelector('.filter-popup');
+  var filterClose = document.querySelector('.filter-popup__close');
+
+  if (filterToggle && filterPopup && filterClose) {
+    filterToggle.addEventListener('click', function () {
+      filterPopup.classList.remove('hidden');
+    });
+    filterClose.addEventListener('click', function () {
+      filterPopup.classList.add('hidden');
+    });
+  }
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(3)))
 
 /***/ }),
