@@ -615,6 +615,18 @@ document.addEventListener('DOMContentLoaded', function () {
       filterPopup.classList.add('hidden');
     });
   }
+}); // Открыть меню
+
+document.querySelector('.hamburger__input').addEventListener('change', function (e) {
+  var menu = document.querySelector('.mobile-menu');
+
+  if (this.checked) {
+    menu.classList.add('open');
+    document.body.classList.add('no-scroll'); // чтобы не скроллить подложку
+  } else {
+    menu.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+  }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(3)))
 
